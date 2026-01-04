@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+
+/* 800 : exrata blod */
+/* 700 : bold  */
+/* 600 : semi bold */
+/* 500 : medium */
+/* 400 : regular */
+
+
+
+/* ---------- Pretnedard ---------- */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+
+/* ---------- reset ----------- */
+* {margin: 0; padding: 0; box-sizing: border-box; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {text-decoration: inherit; color: inherit;}
+li {list-style: none;}
+img {vertical-align: middle;}
+a img {border: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+
+/* ----------- design system ---------- */
+/* color */
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #00ff00;
+    --pink: #ff00ff;
+    --cyan: #00ffff;
+    --red: #FF0000;
+}
+
+/* background color */
+html {
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}
+
+/* 포인트용 */
+.po {
+    color: var(--black);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* 영문 본문용 */
+.en, h3 { 
+    color: var(--black);
+    font-family: 'Pretendard', sans-serif;
+    line-height: 150%;
+    letter-spacing: normal;
+}
+
+/* 국문 본문용 */
+.kr {
+    color: var(--black);
+    font-family: 'Pretendard', sans-serif;
+    line-height: 150%;
+    letter-spacing: -5%;
+}
+
+.img-box > img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-box > svg {
+    width: 100%;
+    height: 100%;
+}

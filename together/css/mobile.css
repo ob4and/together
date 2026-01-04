@@ -1,0 +1,40 @@
+.mobile {
+    z-index: 50;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.mobile svg {
+    width: 20vh;
+    height: 20vh;
+}
+
+.mobile p {
+    width: 100vw;
+    color: var(--black);
+    font-size: 2vh;
+    text-align: center;
+    font-weight: 400;
+    line-height: 3.5vh;
+}
+
+.mobile p span {
+    font-weight: 650;
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .wrap {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
